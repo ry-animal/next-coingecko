@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import CoinsWidget from "@/components/CoinsWidget";
-import { COIN_LIST, SECOND_COIN_LIST } from '@/constants'
+import { COIN_LIST } from '@/constants'
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -13,7 +13,6 @@ export default function Home() {
     >
       <div className="z-10 max-w-5xl w-full items-center justify-center font-mono text-sm flex flex-col gap-10 ">
      <CoinsWidget coinList={COIN_LIST} /> 
-     <CoinsWidget coinList={SECOND_COIN_LIST} />
       </div>
     </main>
   );

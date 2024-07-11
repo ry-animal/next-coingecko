@@ -28,7 +28,7 @@ const CoinsWidget = ({ coinList}: CoinsWidgetProps) => {
                 <div key={coin} className='flex gap-2 py-2'>
                     <div className='font-mono text-sm'>{coin}:</div>
                     <div className='font-mono text-sm'>
-                        ${data && data[coin] ? data[coin].usd.toFixed(2) : 'N/A'}
+                        ${data && data[coin] ? data[coin].usd : 'N/A'}
                     </div>
                 </div>
             ))}
